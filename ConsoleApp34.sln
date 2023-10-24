@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAreflection", "CAreflection.csproj", "{E7ACA218-279A-44E8-9B24-C8A4B0326377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7ACA218-279A-44E8-9B24-C8A4B0326377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7ACA218-279A-44E8-9B24-C8A4B0326377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7ACA218-279A-44E8-9B24-C8A4B0326377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7ACA218-279A-44E8-9B24-C8A4B0326377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BF58840-0D35-4E7D-8FC9-3A09FE0EF1DC}
+	EndGlobalSection
+EndGlobal

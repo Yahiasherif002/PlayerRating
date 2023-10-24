@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CAreflection</name>
+    </assembly>
+    <members>
+        <member name="T:Program">
+            <summary>
+             Represnts a program that validates the skills of a player
+            </summary>
+        </member>
+        <member name="M:Program.Main(System.String[])">
+            <summary>
+            Represents the entry point of the program
+            </summary>
+            <param name="args"> The command-line arguments </param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Program.player" -->
+        <member name="P:Program.player.name">
+            <summary>
+            Gets or sets the name of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.id">
+            <summary>
+            gets or sets the id of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.shooting">
+            <summary>
+            gets or sets the shooting skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.passing">
+            <summary>
+            gets or sets the passing skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.dribbling">
+            <summary>
+            gets or sets the dribbling skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.defending">
+            <summary>
+            gets or sets the defending skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.speed">
+            <summary>
+            gets or sets the speed skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.physical">
+            <summary>
+            gets or sets the physical skill of the player
+            </summary>
+        </member>
+        <member name="P:Program.player.overall">
+            <summary>
+            gets or sets the overall skill of the player
+            </summary>
+        </member>
+        <member name="T:Program.SkillAtribute">
+             <summary>
+             Represents a custome  skill attribute
+             </summary>
+             <remarks>
+             This attribute is used to specify the name of the skill and the min and max values
+             </remarks>
+             <example>
+             This example demonstrates the usage of the SkillAttribute class:
+             <code>
+            [SkillAttribute(nameof(shooting), 1, 99)]
+            public int shooting { get; set; }
+              </code>
+            </example>
+            <seealso cref="T:Program.player"/>
+            <seealso cref="T:Program.Error"/>
+            <seealso cref="T:System.Collections.Generic.List`1"/>
+            <seealso cref="T:System.Attribute"/>
+            <seealso cref="T:System.AttributeUsageAttribute"/>
+        </member>
+        <member name="P:Program.SkillAtribute.name">
+            <summary>
+            Gets the name of the skill
+            </summary>
+        </member>
+        <member name="P:Program.SkillAtribute.min">
+            <summary>
+            gets the min value of the skill
+            </summary>
+        </member>
+        <member name="P:Program.SkillAtribute.max">
+            <summary>
+            gets the max value of the skill
+            </summary>
+        </member>
+        <member name="M:Program.SkillAtribute.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Program.SkillAtribute"/> class
+            </summary>
+            <param name="name">The name of the skill </param>
+            <param name="min">The min value of the skill </param>
+            <param name="max">the max value of the skill</param>
+        </member>
+        <member name="M:Program.SkillAtribute.isValid(System.Object)">
+            <summary>
+            Determines whether the specified object is valid
+            </summary>
+            <param name="obj">The object value to be validated</param>
+            <returns>True if the value is within the specified range, otherwise false .</returns>
+        </member>
+        <member name="T:Program.Error">
+            <summary>
+            Represents an error that occured during the validation of a player
+            </summary>
+            <remarks>
+            This class is used to encapsulate and represent errors that occur when validating the skill attributes of a player. It contains information about the specific error message, the field associated with the error, and the name of the player whose data is invalid.
+            </remarks>
+            <example>   
+            this example demonstrate the usage of error class
+            <code>
+            Error error = new Error("shooting is not valid", "shooting", "messi");
+            </code>
+            </example>
+            <seealso cref="T:Program.player"/>
+            <seealso cref="T:Program.SkillAtribute"/>
+            <seealso cref="T:System.Collections.Generic.List`1"/>
+            <Seealso cref="M:Program.Error.ToString"/>
+            <seealso cref="T:System.String"/>
+        </member>
+        <member name="M:Program.Error.#ctor(System.String,System.String,System.String)">
+            <summary>
+            This method is used to initialize a new instance of the <see cref="T:Program.Error"/> class   
+            </summary>
+            <param name="message"> The error message </param>
+            <param name="field">The field that conrain the error</param>
+            <param name="playerName"> The player name who's data is invalid</param>
+        </member>
+        <member name="M:Program.Error.ToString">
+            <summary>
+            Returns a string representation of the error message, field, and associated player name.
+            </summary>
+            <returns>A formatted string with the error details.</returns>
+        </member>
+    </members>
+</doc>
